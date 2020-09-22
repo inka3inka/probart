@@ -1,0 +1,19 @@
+@import "./_mixins";
+@import "./_reset";
+
+body {
+    background-color: green;
+
+    @include media-tablet {
+        background-color: red
+    }
+
+    @include media-desktop {
+        background-color: yellow;
+    }
+
+    div {
+        background-color: aqua;
+    }
+}
+
