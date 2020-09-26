@@ -22,6 +22,7 @@ display: none
 .header__container {
 background-color: $basic-color;
 
+
   .header__main-elements {
     display: flex;
     flex-direction: row;
@@ -34,6 +35,8 @@ background-color: $basic-color;
 
   .header__advertise {
     height: 45vh;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

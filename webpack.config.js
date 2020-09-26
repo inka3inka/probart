@@ -30,6 +30,29 @@ module.exports={
         use: ['style-loader', 'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+              extract: true
+            }
+          }
+        ]
       }
     ]
   }
