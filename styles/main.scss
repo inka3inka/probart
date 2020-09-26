@@ -40,4 +40,43 @@ background-color: $basic-color;
   }
 }
 
+.realizations__container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 4vw;
+  background-color: $basic-color;
+
+  .realizations__tile {
+    height: 45%;
+    margin-bottom: 2vh;
+    position: relative;
+
+    p {
+      background-color: $realizations-color;
+      height: 5vh;
+      width: 100%;
+      line-height: 5vh;
+      position: absolute;
+      top: 50%;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  div:first-of-type {
+    // background-color: green;
+    // background-image: url("../assets/wooden1.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+  }
+
+  div:last-of-type {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
 
